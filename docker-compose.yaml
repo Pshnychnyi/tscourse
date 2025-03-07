@@ -1,0 +1,11 @@
+services:
+  ubuntu-node:
+    build:
+        context: .
+        dockerfile: docker/Dockerfile
+    container_name: ubuntu_node_container
+    tty: true
+    volumes:
+      - .:/app
+    working_dir: /app
+
